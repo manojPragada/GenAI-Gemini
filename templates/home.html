@@ -1,0 +1,27 @@
+{% include "includes/header.html" %}
+
+{% block content %}
+
+    <div>
+        
+                <div class="chat-container">
+                    <div class="chat-messages">
+                        
+                    </div>
+                    <div id="generating-animation">
+                        <b><i><span></span>Thinking</i></b>
+                    </div>
+                    <div class="chat-input">
+                        <form id="chat-form" type="POST">
+                            <textarea id="message-input" onkeyup="handleenter(this, event)" placeholder="Type your message..." ></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+                
+        
+    </div>
+
+{% endblock %}
+
+{% include "includes/footer.html" %}
